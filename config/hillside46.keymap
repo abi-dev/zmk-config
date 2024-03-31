@@ -30,7 +30,7 @@
                 default_layer {
                         bindings = <
 &kp  TAB      &kp  DE_Q     &kp  DE_W     &kp  DE_F     &kp  DE_P     &kp  DE_B                                                                      &kp DE_J      &kp DE_L     &kp  DE_U     &kp  DE_Y     &kp  SEMI     &kp  DE_MINUS
-&kp  LSHFT    &kp  DE_A     &kp  DE_R     &kp  DE_S     &kp  DE_T     &kp  DE_G                                                                      &kp DE_M      &kp DE_N     &kp  DE_E     &kp  DE_I     &kp  DE_O     &kp  DE_SQT
+&kp  LSHFT    &kp  DE_A     &kp  DE_R     &kp  DE_S     &kp  DE_T     &kp  DE_G                                                                      &kp DE_M      &kp DE_N     &kp  DE_E     &kp  DE_I     &kp  DE_O     &ensqt
 &kp  LCTRL    &kp  DE_Z     &kp  DE_X     &kp  DE_C     &kp  DE_D     &kp  DE_V     &kp   ESC                                          &trans        &kp DE_K      &kp DE_H     &kp  DE_COMMA &kp  DE_DOT   &kp  DE_SLASH &kp  RSHFT
                                                         &trans        &kp  LALT     &mo   NAV_L    &kp  SPACE            &kp  ENTER    &mo  SYM_L    &kp  BSPC     &kp  RGUI
                         >;
@@ -67,5 +67,14 @@
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
+        };
+
+        behaviors {
+              ensqt: en_quote {
+                    compatible = "zmk,behavior-mod-morph";
+                    #binding-cells = <0>;
+                    bindings = <&kp DE_SQT>, <&kp DE_DQT>;
+                    mods = <(MOD_LSFT)>;
+              };
         };
 };
