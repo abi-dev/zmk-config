@@ -41,7 +41,7 @@
                         bindings = <
 &kp  F12      &kp  F1       &kp  F2       &kp  F3       &kp  F4        &kp  F5                                                                        &kp   F6      &kp  F7      &kp   F8       &kp   F9      &kp  F10      &kp F11
 &kp  DE_GRAVE &kp  DE_EXCL  &kp  DE_AT    &kp  DE_HASH  &kp  DE_DOLLAR &kp  DE_PERCENT                                                                &kp  DE_CARET &kp  DE_AMPS &kp   DE_ASTRK &kp   DE_LPAR &kp  DE_RPAR  &trans
-&trans        &trans        &trans        &trans        &trans         &trans        &trans                                             &kp  Redo     &trans        &trans       &trans         &kp   DE_LBRC &kp  DE_RBRC  &kp DE_PIPE
+&trans        &trans        &trans        &trans        &trans         &trans        &trans                                             &kp  Redo     &trans        &trans       &trans         &kp   DE_LBRC &kp  DE_RBRC  &kp DE_BACKSLASH 
                                                         &trans         &trans        &trans        &trans                 &trans        &mo  ADJ_L    &trans        &trans 
                         >;
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
