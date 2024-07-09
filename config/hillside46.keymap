@@ -60,10 +60,10 @@
 
                 adj_layer {
                         bindings = <
-&none         &none         &none         &to  COLEMK_L &none         &none                                                                             &none             &kp   F11          &kp   DE_U_UMLAUT      &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
-&sys_reset    &kp DE_A_UMLAUT     &bt  BT_SEL 1 &kp  DE_SHARP_S    &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &none              &none            &none          &kp  DE_O_UMLAUT           &sys_reset
-&none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none            &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
-                                                        &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
+&none         &none         &none         &to  COLEMK_L &none         &none                                                                          &none         &kp   F11     &kp  DE_U_UMLAUT      &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
+&sys_reset    &kp DE_A_UMLAUT     &bt  BT_SEL 1 &kp  DE_SHARP_S    &bt  BT_SEL 3 &bt  BT_SEL 4                                                       &none         &none         &kp  PG_DOWN          &kp PG_UP         &kp  DE_O_UMLAUT           &sys_reset
+&none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none         &none         &none         &out OUT_USB          &out  OUT_BLE  &none           &bootloader
+                                                        &trans        &trans        &trans        &trans                 &trans        &trans        &trans        &trans 
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
